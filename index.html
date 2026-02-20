@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Francesco "Cico" Montorselli – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio artistico di Francesco 'Cico' Montorselli, scultore. Biografia, poetica e rapporto con Giacinto Cerone.">
+  <style>
+    :root {
+      --bg: #f5f5f5;
+      --bg-dark: #111;
+      --text: #111;
+      --text-light: #f5f5f5;
+      --accent: #b38b5e;
+      --muted: #777;
+      --max-width: 960px;
+      --font-main: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      padding: 1.5rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.1rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      margin-left: 1.2rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    nav a:hover { color: var(--accent); }
+
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 1.5rem;
+      background-color: #e3e3e3;
+    }
+
+    .hero-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero-title {
+      font-size: 2.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 26rem;
+    }
+
+    .hero-quote {
+      font-size: 1.1rem;
+      border-left: 2px solid var(--accent);
+      padding-left: 1rem;
+      color: #333;
+    }
+
+    main { padding: 3rem 1.5rem 4rem; }
+
+    section {
+      max-width: var(--max-width);
+      margin: 0 auto 3.5rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-intro {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      max-width: 32rem;
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 2rem;
+    }
+
+    p { margin-bottom: 0.9rem; font-size: 0.98rem; }
+
+    .muted { color: var(--muted); font-size: 0.9rem; }
+
+    .highlight { color: var(--accent); font-weight: 600; }
+
+    .work-card {
+      background-color: #ffffff;
+      padding: 1rem;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      margin-bottom: 1.5rem;
+    }
+
+    .work-image-placeholder {
+      background-color: #d0d0d0;
+      height: 180px;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #555;
+    }
+
+    .contact-box {
+      background-color: #111;
+      color: #f5f5f5;
+      padding: 2rem;
+      border-radius: 4px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 2rem;
+    }
+
+    .contact-box a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer {
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 800px) {
+      .hero-inner,
+      .two-columns,
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+      nav { display: none; }
+      .hero-title { font-size: 2rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="logo">Francesco "Cico" Montorselli</div>
+    <nav>
+      <a href="#biografia">Biografia</a>
+      <a href="#maestro-allievo">Maestro & Allievo</a>
+      <a href="#poetica">Poetica</a>
+      <a href="#opere">Opere</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1 class="hero-title">Materia, gesto, relazione</h1>
+      <p class="hero-subtitle">
+        Scultura come corpo vivo, tensione tra fragilità e potenza. Un dialogo continuo con la materia.
+      </p>
+    </div>
+    <div>
+      <p class="hero-quote">
+        «La scultura non è un oggetto da plasmare, ma un corpo con cui entrare in relazione.»
+      </p>
+    </div>
+  </div>
+</section>
+
+<main>
+
+  <section id="biografia">
+    <h2>Biografia</h2>
+    <p class="section-intro">
+      Origini montane, formazione artigianale, incontro con la scultura contemporanea.
+    </p>
+
+    <div class="two-columns">
+      <div>
+        <p>
+          Francesco Montorselli nasce a L’Aquila, in un paesino di montagna nel cuore degli Appennini Abruzzesi,
+          <span class="highlight">Cesaproba</span>. Diplomato maestro d'arte del legno nel 1996, nel 1999 si trasferisce a Roma,
+          dove prosegue gli studi d'arte e affina le sue capacità tecniche nell'ebanisteria presso la bottega dei maestri Gianni e Giuseppe Fubelli.
+        </p>
+        <p>
+          Vive quegli anni a stretto contatto con artisti di fama come Giacinto Cerone, maestro contemporaneo indiscusso.
+          Frequenta lo studio di Cerone e collabora alle sue opere come allievo diretto nello studio di Santa Croce in Gerusalemme a Roma.
+        </p>
+      </div>
+
+      <div>
+        <p class="muted">
+          La formazione di Montorselli nasce dall’intreccio tra artigianato del legno, bottega e una visione radicale della scultura come esperienza fisica e mentale.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="maestro-allievo">
+    <h2>Maestro & Allievo</h2>
+    <p class="section-intro">
+      Il rapporto con Giacinto Cerone come scintilla originaria.
+    </p>
+
+    <div class="two-columns">
+      <div>
+        <p>
+          L’incontro con Giacinto Cerone segna per Montorselli una svolta decisiva, tanto sul piano umano quanto su quello artistico.
+          Dal 2000 al 2004 si forma un dialogo intenso, fatto di osservazione, ascolto e lavoro condiviso.
+        </p>
+        <p>
+          Cerone trasmette a Montorselli un modo di “abitare” la materia: un rapporto fisico, istintivo, quasi rituale,
+          in cui il gesto diventa linguaggio e lo spazio organismo vivo.
+        </p>
+      </div>
+
+      <div>
+        <p>
+          Da Cerone assimila l’idea che la scultura non sia un oggetto da plasmare, ma un corpo con cui entrare in relazione.
+          Impara a leggere lo spazio, il peso, il ritmo delle forme.
+        </p>
+        <p>
+          Questa eredità non si traduce in imitazione, ma in una voce propria: una tensione continua tra fragilità e potenza.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="poetica">
+    <h2>Poetica</h2>
+    <p class="section-intro">
+      Gesto, materia, resistenza.
+    </p>
+
+    <p>
+      La ricerca di Montorselli nasce da un confronto diretto con la materia, intesa come presenza autonoma.
+      Il lavoro si sviluppa tra controllo e abbandono, progetto e imprevisto, forma e frattura.
+    </p>
+
+    <p>
+      Il gesto non è decorazione, ma atto necessario: un modo per innescare reazioni, per mettere alla prova il limite della materia e del corpo.
+    </p>
+
+    <p>
+      Le superfici portano i segni del fare, le ferite del processo, le tracce di una lotta che non si chiude mai del tutto.
+    </p>
+  </section>
+
+ <section id="opere">
+  <h2>Opere</h2>
+  <p class="section-intro">
+    Una selezione di lavori.
+  </p>
+
+  <div class="gallery">
+
+    <div class="gallery-item">
+      <img src="dafne1.png" alt="Dafne – vista 1">
+    </div>
+
+    <div class="gallery-item">
+      <img src="dafne2.png" alt="Dafne – vista 2">
+    </div>
+
+  </div>
+
+  <div class="work-info">
+    <h3 class="work-title">Dafne</h3>
+    <div class="work-meta">2005 – legno di quercia</div>
+    <p class="muted">
+      Due viste della scultura “Dafne”, realizzata in legno di quercia. Il movimento verticale e la torsione organica
+      evocano la metamorfosi, la fuga e il radicamento.
+    </p>
+  </div>
+
+</section>
+
+  <section id="contatti">
+    <h2>Contatti</h2>
+
+    <div class="contact-box">
+      <div>
+        <p>Per informazioni su opere, mostre o collaborazioni, contatta direttamente l’artista.</p>
+        <p class="muted">Portfolio completo e materiali ad alta risoluzione disponibili su richiesta.</p>
+      </div>
+
+      <div>
+        <p><strong>Email:</strong>
+          <a href="mailto:cicomontorselli@gmail.com">cicomontorselli@gmail.com</a>
+        </p>
+
+        <p><strong>Instagram:</strong>
+          <a href="https://www.instagram.com/francescomontorselli/" target="_blank">
+            @francescomontorselli
+          </a>
+        </p>
+
+        <p><strong>Facebook:</strong>
+          <a href="https://www.facebook.com/Cicomontorselli/" target="_blank">
+            Cico Montorselli
+          </a>
+        </p>
+
+        <p><strong>Studio:</strong> Roma, Italia</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © Francesco "Cico" Montorselli – Tutti i diritti riservati
+</footer>
+
+</body>
+</html>
